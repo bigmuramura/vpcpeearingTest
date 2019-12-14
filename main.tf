@@ -61,7 +61,7 @@ resource "aws_route_table_association" "public-1" {
 ### VPC 2個目
 # VPC作成
 resource "aws_vpc" "vpc-2" {
-  cidr_block           = "172.17.22.0/16"
+  cidr_block           = "172.17.0.0/16"
   enable_dns_support   = true # AWSのDNSサーバで名前解決有効
   enable_dns_hostnames = true # VPC内のリソースにパブリックDNSホスト名を自動割り当て有効
   tags = {
